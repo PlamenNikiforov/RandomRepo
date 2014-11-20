@@ -1,20 +1,16 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 
 int main(){
-    int size=5;
-    char array[size];
-    char arrayRev[size];
-    cout<<"Input values";
-    for(int i=0;i<size;i++){
-        cin>>array[i];
+
+    string word,reword;
+    cout<<"Enter the word: ";
+    cin>>word;
+    
+    for(int i=word.length();i>=0;--i){
+        cout<<word[i];
     }
-    for(int j=0;j<5;j++){
-        arrayRev[j]=array[size];
-        size--;
-    }
-    for(int i=0;i<5;i++){
-        cout<<arrayRev[i]<<endl;
-    }
+    cout<<endl;
 }
